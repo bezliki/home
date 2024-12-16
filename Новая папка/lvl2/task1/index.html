@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
 </head>
+
 <body>
     <form id="form">
         <input type="text" id="textInput" placeholder="Введите текст" />
@@ -13,7 +15,7 @@
     </form>
 
     <script>
-        
+
         const handleSubmit = (event) => {
             event.preventDefault()
             const input = document.getElementById('textInput')
@@ -21,10 +23,10 @@
         }
 
 
-        window.onload = () => {
-            const form = document.getElementById('form')
-            form.addEventListener('submit', handleSubmit)
-        }
+
+        const form = document.getElementById('form')
+        form.addEventListener('submit', handleSubmit)
     </script>
 </body>
+
 </html>
